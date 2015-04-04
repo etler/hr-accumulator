@@ -25,7 +25,7 @@ module.exports = {
   },
   log: function (key) {
     var total;
-    total = times[key][0] * 1000000000 + times[key][1];
-    return console.log(key + ": " + (Math.floor(total / 1000000000)) + "s " + (Math.floor(total / 1000000 % 1000)) + "ms " + (Math.floor(total / 1000 % 1000)) + "μs " + (total % 1000) + "ns");
+    total = times[key][0] * 1e9 + times[key][1];
+    return console.log(key + ": " + (Math.floor(total / 1e9)) + "s " + (Math.floor(total / 1e6 % 1e3)) + "ms " + (Math.floor(total / 1e3 % 1e3)) + "μs " + (total % 1e3) + "ns");
   }
 };
