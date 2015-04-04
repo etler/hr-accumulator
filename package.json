@@ -1,0 +1,11 @@
+{
+  "name" : "hr-accumulator",
+  "version" : "v0.0.1",
+  "description" : "Helper library for doing timing with hrtimer",
+  "keywords" : [ "timer", "hrtime", "accumulator", "performance" , "benchmark" ],
+  "author" : "Tim Etler <tmetler@gmail.com> (http://www.timetler.com)",
+  "main" : "./index.js",
+  "repository" :
+    { "type" : "git"
+    , "url" : "git@github.com:etler/hr-accumulator.git" }
+}
