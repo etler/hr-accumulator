@@ -2,6 +2,10 @@
 
 A helper library for tracking accumulated times using hrtime.
 
+## Install
+
+`npm install hr-accumulator`
+
 ##Methods
 
 ###resetAll()
