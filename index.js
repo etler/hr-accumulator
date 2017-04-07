@@ -41,14 +41,14 @@
     this.maximums[key] = -Infinity;
   }
 
-  Accumulator.prototype.start = function (key) {
+  Accumulator.prototype.start = Accumulator.prototype.unpause = function (key) {
     if (!this.timers.hasOwnProperty(key)) {
       this.reset(key);
     }
     this.timers[key] = startTime();
   }
 
-  Accumulator.prototype.stop = function (key) {
+  Accumulator.prototype.pause = function (key) {
     var time;
     if (this.timers[key]) {
       time = stopTime(this.timers[key]);
@@ -60,6 +60,12 @@
       if (time > this.maximums[key]) {
         this.maximums[key] = time;
       }
+    }
+  }
+
+  Accumulator.prototype.stop = function (key) {
+    this.pause(key);
+    if (this.timers.hasOwnProperty(key)) {
       this.counts[key]++;
     }
   }
