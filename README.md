@@ -1,4 +1,4 @@
-#hr-accumulator
+# hr-accumulator
 
 A helper library for tracking accumulated times using hrtime.
 
@@ -6,33 +6,33 @@ A helper library for tracking accumulated times using hrtime.
 
 `npm install hr-accumulator`
 
-##Methods
+## Methods
 
-###resetAll()
+### resetAll()
 
 Removes all registered timers
 
-###reset(name)
+### reset(name)
 
 Resets the referenced timer to 0 seconds.
 
-###start(name)
+### start(name)
 
 Starts a timer to start tracking time.
 
-###stop(name)
+### stop(name)
 
 Stops the referenced timer, and stop tracking time.
 
-###toString(name)
+### toString(name)
 
 Pretty print the current accumulated time of the referenced timer in the format `(name): (seconds)s (milliseconds)ms (microseconds)μs (nanoseconds)ns`
 
-###log(name)
+### log(name)
 
 Print the referenced timer to console.log.
 
-###stats(magnitude)
+### stats(magnitude)
 
 List out various statistics for all registered timers, takes the following magnitude strings to change stats magnitude:
 
@@ -40,3 +40,6 @@ List out various statistics for all registered timers, takes the following magni
 * 'ms' or 'milliseconds' (default)
 * 'µs' or 'microseconds'
 * 'ns' or 'nanoseconds'
+
+## License
+MIT
