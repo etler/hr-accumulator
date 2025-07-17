@@ -1,6 +1,6 @@
 {
   "name": "hr-accumulator",
-  "version": "v0.1.0",
+  "version": "0.2.0",
   "description": "Helper library for doing timing with hrtimer",
   "keywords": [
     "timer",
